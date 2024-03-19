@@ -8,14 +8,16 @@
                 margin: 0;
                 padding: 0;
             }
+            h1, h2, h3, h4, h5 {
+                font-weight: 400;
+            }
             #header {
                 text-align: center;
-                height: fit-content;
             }
             #header > .header-img {
                 width: 100%;
-                height: 400px;
-                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://acme-website.netlify.app/images/programming.png');
+                height: 435px;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://acme-website.netlify.app/images/programming.png');
                 background-size: stretch;
                 background-repeat: no-repeat;
                 position: absolute;
@@ -24,15 +26,16 @@
             }
             
             #header > .content {
-                padding: 160px 0;
+                padding: 110px 0;
             }
             #header > .content > h1 {
                 color: #ffffff;
-                margin: 16px 0;
+                margin: 8px 0;
             }
             #header > .content > p {
                 color: #ffffff;
-                margin: 16px 0;
+                margin: 48px 0;
+                padding: ;
             }
             #header > .content > button {
                 background: #555555;
@@ -40,6 +43,32 @@
                 padding: 12px 24px;
                 margin: 16px 0;
                 border: 1px solid;
+            }
+            #header > .content > button:hover {
+                opacity: 0.65;
+                cursor: pointer;
+            }
+            
+            main > .content-1 {
+                text-align: center;
+                padding: 16px 84px;
+            }
+            main > .content-1 > .description {
+                display: inline-block;
+                margin: 32px 0;
+                line-height: 1.5;
+            }
+            main > .content-1 > .description > .first {
+                width: 45%;
+                float: left;
+                padding: 4px 4px;
+                text-align: justify;
+            }
+            main > .content-1 > .description > .second {
+                width: 45%;
+                float: right;
+                padding: 4px 4px;
+                text-align: justify;
             }
         </style>
     </head>
@@ -57,5 +86,23 @@
                 <button type="button">Read More</button>
             </div>
         </header>
+        <main>
+            <div class="content-1">
+                <h1>Web & Application Development</h1>
+                <section class="description">
+                    <p class="first">
+                        Lorem ipsum dolor, sit amet consecteturableing adipisicing elit.
+                        Autem minima, iure incidunt aliquid deserunt hic, debitis fugiat saepe
+                        tempora officiis odit asperiores, laborum dolorem modi! Vero accusamus
+                        facere voluptates vel, et aliquid,
+                    </p>
+                    <p class="second">
+                        cum, maiores itaque distinctio veniam nesciunt tempora impedit sit amet
+                        consectetur adipisicing elit. Autem minima, iure incidunt aliquid deserunt
+                        hic sit amet consectetur adipisicing elit. Autem minima, iure incidunt aliquid!
+                    </p>
+                </section>
+            </div>
+        </main>
     </body>
 </html>
