@@ -57,26 +57,32 @@
             
             main > .content-1 {
                 text-align: center;
-                padding: 4px 150px;
+                padding: 4px 128px;
+                border: 1px solid ;
             }
             main > .content-1 > .description {
                 display: inline-block;
-                margin: 4px 0;
+                margin: 32px 0;
                 line-height: 1.5;
             }
             main > .content-1 > .description > .first {
-                width: 43%;
+                width: 50%;
                 float: left;
-                padding: 0 30px;
+            }
+            main > .content-1 > .description > .first > p {
                 text-align: justify;
+                border: 1px solid ;
             }
             main > .content-1 > .description > .second {
-                width: 43%;
+                width: 50%;
                 float: right;
-                padding: 0 30px;
+            }
+            main > .content-1 > .description > .second > p {
                 text-align: justify;
+                border: 1px solid ;
             }
             
+            /*
             main > .content-2 {
                 text-align: center;
                 padding: 16px 130px;
@@ -134,6 +140,7 @@
                 text-align: center;
                 padding: 64px 40px;
             }
+            */
 
         </style>
     </head>
@@ -155,19 +162,25 @@
             <div class="content-1">
                 <h1>Web & Application Development</h1>
                 <section class="description">
-                    <p class="first">
-                        Lorem ipsum dolor, sit amet consecteturableing adipisicing elit.
-                        Autem minima, iure incidunt aliquid deserunt hic, debitis fugiat saepe
-                        tempora officiis odit asperiores, laborum dolorem modi! Vero accusamus
-                        facere voluptates vel, et aliquid,
-                    </p>
-                    <p class="second">
-                        cum, maiores itaque distinctio veniam nesciunt tempora impedit sit amet
-                        consectetur adipisicing elit. Autem minima, iure incidunt aliquid deserunt
-                        hic sit amet consectetur adipisicing elit. Autem minima, iure incidunt aliquid!
-                    </p>
+                    <section class="first">
+                        <p>
+                            Lorem ipsum dolor, sit amet consecteturableing adipisicing elit.
+                            Autem minima, iure incidunt aliquid deserunt hic, debitis fugiat saepe
+                            tempora officiis odit asperiores, laborum dolorem modi! Vero accusamus
+                            facere voluptates vel, et aliquid,
+                        </p>
+                    </section>
+                    <section class="second">
+                        <p>
+                            cum, maiores itaque distinctio veniam nesciunt tempora impedit sit amet
+                            consectetur adipisicing elit. Autem minima, iure incidunt aliquid deserunt
+                            hic sit amet consectetur adipisicing elit. Autem minima, iure incidunt aliquid!
+                        </p>
+                    </section>
                 </section>
             </div>
+            
+            <!--
             <div class="content-2">
                 <section class="card">
                     <img src="https://acme-website.netlify.app/images/sec-b.jpg" alt="web dev" />
@@ -228,6 +241,7 @@
                     </p>
                 </section>
             </div>
+            -->
         </main>
     </body>
 </html>
