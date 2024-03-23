@@ -47,7 +47,7 @@
             #header > .content > button {
                 background: #555555;
                 color: #ffffff;
-                padding: 12px 24px;
+                padding: 16px 32px;
                 margin: 16px 0;
                 border: 1px solid;
             }
@@ -58,12 +58,11 @@
             
             main > .content-1 {
                 text-align: center;
-                padding: 4px 120px;
+                padding: 16px 148px 0 148px;
             }
             main > .content-1 > .description {
                 display: inline-block;
-                margin: 32px 0;
-                line-height: 1.5;
+                margin: 0;
             }
             main > .content-1 > .description > .first {
                 width: 50%;
@@ -72,6 +71,7 @@
             main > .content-1 > .description > .first > p {
                 text-align: justify;
                 padding: 0 32px;
+                line-height: 1.5;
             }
             main > .content-1 > .description > .second {
                 width: 50%;
@@ -80,6 +80,7 @@
             main > .content-1 > .description > .second > p {
                 text-align: justify;
                 padding: 0 32px;
+                line-height: 1.5;
             }
             
             
@@ -89,7 +90,7 @@
                 padding: 32px 16px;
             }
             main > .content-2 > .card {
-                width: 30%;
+                width: 22.5%;
                 margin: 0 5px;
                 background: #ffffff;
                 display: inline-block;
@@ -97,15 +98,14 @@
             main > .content-2 > .card > img {
                 width: 100%;
             }
-            main > .content-2 > .card > .description {
-            }
             main > .content-2 > .card > .description > h1 {
-                margin: 32px 0;
+                margin: 24px 0;
             }
             main > .content-2 > .card > .description > p {
                 margin: 0;
+                padding: 0 32px 24px 32px;
                 line-height: 1.5;
-                text-align: center;
+                text-align: justify;
             }
 
             main > .content-3 {
@@ -129,7 +129,8 @@
             }
             main > .content-4 > .left > h1, p {
                 margin: 64px 0;
-                padding: 0 32px;
+                padding: 0 64px;
+                text-align: justify;
             }
             
             main > .content-4 > .right {
@@ -137,12 +138,34 @@
                 float: right;
                 color: #ffffff;
                 background: #555555;
+                padding: 0 0 64px 0;
                 text-align: center;
-                padding: 64px 0;
             }
             main > .content-4 > .right > h1, p {
-                margin: 32px 0;
+                margin: 64px 0;
                 padding: 0 64px;
+                text-align: justify;
+            }
+            #footer {
+                width: 100%;
+                display: inline-block;
+                background: #000;
+            }
+            #footer > .left {
+                float: left;
+                color: #ffffff;
+            }
+            #footer > .left > p {
+                margin: 0;
+                padding: 32px 128px;
+            }
+            #footer > .right {
+                float: right;
+                color: #ffffff;
+            }
+            #footer > .right > p {
+                margin: 0;
+                padding: 32px 128px;
             }
 
         </style>
@@ -245,7 +268,14 @@
                     </p>
                 </section>
             </div>
-            
         </main>
+        <footer id="footer">
+            <section class="left">
+                <p>Acme Web Solutions &copy; 2019</p>
+            </section>
+            <section class="right">
+                <p>Created by Pushkar!</p>
+            </section>
+        </footer>
     </body>
 </html>
