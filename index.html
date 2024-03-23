@@ -43,6 +43,7 @@
                 color: #ffffff;
                 margin: 48px 0;
                 padding: 0 100px;
+                text-align: center!important;
             }
             #header > .content > button {
                 background: #555555;
@@ -125,6 +126,7 @@
                 float: left;
                 color: #ffffff;
                 background: #2690d4;
+                padding: 32px 0;
                 text-align: center;
             }
             main > .content-4 > .left > h1, p {
@@ -138,7 +140,7 @@
                 float: right;
                 color: #ffffff;
                 background: #555555;
-                padding: 0 0 64px 0;
+                padding: 21px 0;
                 text-align: center;
             }
             main > .content-4 > .right > h1, p {
@@ -167,7 +169,40 @@
                 margin: 0;
                 padding: 32px 128px;
             }
-
+            
+            @media only screen and (max-width: 770px) {
+                main > .content-1 {
+                    width: fit-content;
+                    padding: 0;
+                    margin: 0;
+                }
+                main > .content-1 > .description {
+                    margin: 0;
+                    padding: 0;
+                }
+                main > .content-1 > .description > .first {
+                    width: 100%;
+                    display: block;
+                    margin: 0;
+                    border: 1px solid ;
+                }
+                main > .content-1 > .description > .first > p {
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1.5;
+                }
+                main > .content-1 > .description > .second {
+                    width: 100%;
+                    display: block;
+                    padding: 32px 0;
+                    margin: 0;
+                }
+                main > .content-1 > .description > .second > p {
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1.5;
+                }
+            }
         </style>
     </head>
     <body>
@@ -266,6 +301,7 @@
                         commodi facere repellendus totam cumque iste vel expedita eum,
                         esse hic facilis tenetur sit.
                     </p>
+                    <p><br></p>
                 </section>
             </div>
         </main>
